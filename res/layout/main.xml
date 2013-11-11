@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="0dip"
+    android:layout_marginRight="0dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back" >
+ 
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_marginLeft="10dp" >
+        
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="horizontal" >
+			<ImageButton
+				android:id="@+id/btnNewTracker"
+				android:layout_marginTop="10dp"
+				android:layout_width="150dp"
+				android:layout_height="150dp"
+				android:scaleType="fitCenter"
+				android:src="@drawable/x" />
+ 		    
+ 		    <ImageButton
+ 		        android:id="@+id/btnLoadTracker"
+ 		        android:layout_marginTop="10dp"
+		       	android:layout_width="150dp"
+		       	android:layout_height="150dp"
+		       	android:scaleType="fitCenter"
+		       	android:src="@drawable/b" />
+        </LinearLayout>	                
+    </TableRow>
+    
+    <TableRow
+		android:id="@+id/tableRow1"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dp" >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:orientation="horizontal" >
+ 		    <ImageButton
+ 		        android:id="@+id/btnViewAll"
+ 		        android:layout_marginTop="10dp"
+		       	android:layout_width="150dp"
+		       	android:layout_height="150dp"
+		       	android:scaleType="fitCenter"
+		       	android:src="@drawable/c" />
+ 		    
+ 		    <ImageButton
+ 		        android:id="@+id/btnReset"
+ 		        android:layout_marginTop="10dp"
+		       	android:layout_width="150dp"
+		       	android:layout_height="150dp"
+		       	android:scaleType="fitCenter"
+		       	android:src="@drawable/d" />
+        </LinearLayout>	                
+    </TableRow>
+    
+</TableLayout>
+

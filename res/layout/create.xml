@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	
+    <TableRow>
+        <TextView 
+            android:text="@string/lblTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+    <TableRow>
+		<TextView
+            android:id="@+id/lblDateTime" />        
+    </TableRow>
+    <TableRow>
+		<TextView
+			android:text="@string/lblNumBottle" />
+		<EditText
+		    android:id="@+id/txtNumBottle"
+            android:inputType="number"
+            android:hint="@string/lblUnitBottle"
+			android:width="200dp" />
+	</TableRow>
+	<TableRow>
+		<TextView
+			android:text="@string/lblDrink" />
+		<EditText
+			android:id="@+id/txtDrinkCat"
+			android:inputType="text"
+			android:width="200dp" />
+	</TableRow>
+	<TableRow>
+		<TextView
+			android:text="Drinking Place:" />
+		<EditText
+			android:id="@+id/txtPlace"
+			android:inputType="text"
+			android:width="200dp" />
+	</TableRow>
+	<TableRow>
+		<TextView
+			android:text="Your Mood:" />
+		<EditText
+			android:id="@+id/txtMood"
+			android:inputType="text"
+			android:width="200dp" />
+	</TableRow>
+    <TextView
+        android:id="@+id/lblDt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDetail" />	
+    <EditText
+        android:id="@+id/txtDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:inputType="textMultiLine" />
+    
+    <TableRow>
+        <TextView />
+        <Button
+			android:id="@+id/buttonSignIn"
+			android:text="@string/lblSaveBtn" />
+    </TableRow>
+
+</TableLayout>

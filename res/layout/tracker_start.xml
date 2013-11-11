@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/back" >
+    
+    <TextView 
+        android:id="@+id/txtTitle"
+        android:background="#B06749"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+    
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="0dip"
+    android:layout_marginRight="0dip"
+    android:layout_height="wrap_content">
+ 
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_marginLeft="10dp" >
+        
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="horizontal" >
+			<ImageButton
+				android:id="@+id/btnBrowse"
+				android:layout_marginTop="10dp"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:scaleType="fitCenter"
+				android:src="@drawable/g" />
+ 		    
+ 		    <ImageButton
+ 		        android:id="@+id/btnCreate"
+ 		        android:layout_marginTop="10dp"
+		       	android:layout_width="100dp"
+		       	android:layout_height="100dp"
+		       	android:scaleType="fitCenter"
+		       	android:src="@drawable/h" />
+ 		    
+ 		    <ImageButton
+ 		        android:id="@+id/btnRemindTime"
+ 		        android:layout_marginTop="10dp"
+		       	android:layout_width="100dp"
+		       	android:layout_height="100dp"
+		       	android:scaleType="fitCenter"
+		       	android:src="@drawable/i" />
+ 		    
+ 		    
+        </LinearLayout>	                
+    </TableRow>
+    
+    <TableRow
+		android:id="@+id/tableRow1"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dp" >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:orientation="horizontal" >
+ 		    
+ 		    <ImageButton
+ 		        android:id="@+id/btnBackViewAll"
+ 		        android:layout_marginTop="10dp"
+		       	android:layout_width="100dp"
+		       	android:layout_height="100dp"
+		       	android:scaleType="fitCenter"
+		       	android:src="@drawable/j" />
+ 		    
+ 		    <ImageButton
+ 		        android:id="@+id/btnBackMain"
+ 		        android:layout_marginTop="10dp"
+		       	android:layout_width="100dp"
+		       	android:layout_height="100dp"
+		       	android:scaleType="fitCenter"
+		       	android:src="@drawable/k" />
+ 		    
+        </LinearLayout>	                
+    </TableRow>
+    
+    
+</TableLayout>
+    
+    
+
+</LinearLayout>

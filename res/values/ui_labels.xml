@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lblNumBottle">Number of Bottle:</string>
+    <string name="lblDrink">Drink Description:</string>
+    <string name="lblTitle">Drinking Diary</string>
+    <string name="lblDetail">Notes and comments for this item:</string>
+    <string name="lblUnitBottle">in milliliter (ml)</string>
+    <string name="lblSaveBtn">Save This</string>
+    
+</resources>

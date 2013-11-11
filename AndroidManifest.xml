@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="study.ms.bonn.lab.qs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application
+        android:icon="@drawable/ic_main"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="Universal Tracker"
+            android:configChanges="keyboardHidden|orientation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".TrackerStartActivity"
+            android:label="Universal Tracker" >
+            <intent-filter>
+	            <action android:name="study.ms.bonn.lab.qs.TRACKER_START" />
+	           	<category android:name="android.intent.category.DEFAULT" />
+           	</intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".NewTrackerActivity"
+            android:label="Create New Tracker" >
+            <intent-filter>
+	            <action android:name="study.ms.bonn.lab.qs.NEW_TRACKER" />
+	           	<category android:name="android.intent.category.DEFAULT" />
+           	</intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ListTrackersActivity"
+            android:label="Available Trackers" >
+            <intent-filter>
+	            <action android:name="study.ms.bonn.lab.qs.LIST_TRACKERS" />
+	           	<category android:name="android.intent.category.DEFAULT" />
+           	</intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".BrowseActivity"
+            android:label="Created Items" >
+            <intent-filter>
+	            <action android:name="study.ms.bonn.lab.qs.LIST_ITEM" />
+	           	<category android:name="android.intent.category.DEFAULT" />
+           	</intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ViewActivity"
+            android:label="Display Item Detail" >
+            <intent-filter>
+	            <action android:name="study.ms.bonn.lab.qs.VIEW_DETAIL" />
+	           	<category android:name="android.intent.category.DEFAULT" />
+           	</intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".CreateActivity"
+            android:label="Create New Item" >
+            <intent-filter>
+	            <action android:name="study.ms.bonn.lab.qs.CREATE" />
+	           	<category android:name="android.intent.category.DEFAULT" />
+           	</intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".RemindRouterActivity"
+            android:label="Reminders" >
+            <intent-filter>
+	            <action android:name="study.ms.bonn.lab.qs.ROUTE_REMIND" />
+	           	<category android:name="android.intent.category.DEFAULT" />
+           	</intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".RemindTimeSetterActivity"
+            android:label="Remind Time Setting" >
+            <intent-filter>
+	            <action android:name="study.ms.bonn.lab.qs.REMIND_TIME" />
+	           	<category android:name="android.intent.category.DEFAULT" />
+           	</intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ReminderConstraintActivity" >
+            <intent-filter>
+	            <action android:name="study.ms.bonn.lab.qs.REMIND_CONSTRAINT" />
+	           	<category android:name="android.intent.category.DEFAULT" />
+           	</intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".LoadTrackerActivity" >
+            <intent-filter>
+	            <action android:name="study.ms.bonn.lab.qs.LOAD_DATA" />
+	           	<category android:name="android.intent.category.DEFAULT" />
+           	</intent-filter>
+        </activity>
+
+        <receiver android:name=".MyBroadcastReceiver"></receiver>
+    </application>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+</manifest>
